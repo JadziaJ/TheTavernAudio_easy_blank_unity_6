@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{1761fbd4-8076-48a6-a39d-59d6160e392a}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{55f35a8c-fd3e-4ccd-a399-4e7a50942b5a}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{fdba4644-ced9-4ee6-b18a-05a7f4360770}">
 		<relationship name="masterBus">
@@ -66,6 +69,9 @@
 	<object class="Timeline" id="{1761fbd4-8076-48a6-a39d-59d6160e392a}">
 		<relationship name="modules">
 			<destination>{6ad28c1b-2e68-4379-af60-7c1858ca1a32}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{e1ac7e1c-1dc5-4aaa-882d-fbde8d311eea}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{1dac41fe-da05-4fd6-afb9-725c41e98d82}">
@@ -105,6 +111,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{1dac41fe-da05-4fd6-afb9-725c41e98d82}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{e1ac7e1c-1dc5-4aaa-882d-fbde8d311eea}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>81.528000000000006</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{1761fbd4-8076-48a6-a39d-59d6160e392a}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{03166d1d-4030-4494-87c1-041d0f133ea0}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{f84bc1e0-65f0-4527-9d8f-f77339b3f64e}">
